@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Explore from './Explore'
 
 function Upload() {
   // Create state variables for the fields in the form
@@ -7,6 +8,7 @@ function Upload() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [destination, setDestination] = useState('');
+  const [destinationDetails, setDestinationDetails] = useState('');
   const [length, setLength] = useState('');
   const [stay, setStay] = useState('');
   const [eat, setEat] = useState('');
@@ -27,6 +29,8 @@ function Upload() {
       setLastName(inputValue);
     } else if (inputType === 'destination') {
         setDestination(inputValue);
+    } else if (inputType === 'destinationDetails') {
+        setDestinationDetails(inputValue);
     } else if (inputType === 'length') {
         setLength(inputValue);
     } else if (inputType === 'stay') {
@@ -45,6 +49,7 @@ function Upload() {
     setLastName('');
     setEmail('');
     setDestination('');
+    setDestinationDetails('');
     setLength('');
     setStay('');
     setEat('');
@@ -84,6 +89,13 @@ function Upload() {
           onChange={handleInputChange}
           type="text"
           placeholder="city, state, country"
+        />
+         <input
+          value={destinationDetails}
+          name="destinationDetails"
+          onChange={handleInputChange}
+          type="textarea"
+          placeholder="tell us about your destination"
         />
           <input
           value={length}
