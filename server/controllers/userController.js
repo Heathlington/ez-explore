@@ -1,5 +1,5 @@
 const { ObjectId } = require('mongoose').Types;
-const { User, Saved } = require('../models');
+const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 module.exports = {

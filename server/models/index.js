@@ -1,4 +1,6 @@
 //const (model) = require('./)
 //Bring in the other model files
 
-module.exports = {}
+const User = require('')
+
+module.exports = { User }

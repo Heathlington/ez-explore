@@ -1,8 +1,9 @@
 const router = require('express').Router();
-
-// const {
-
-// } = require('../../controllers/userController')
+const {
+    getUser,
+    createUser,
+    login
+} = require('../../controllers/user-controller')
 
 const { authMiddleware } = require('../../utils/auth');
 
