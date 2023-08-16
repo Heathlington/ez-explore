@@ -5,7 +5,7 @@ import Login from './Login';
 import Intake from './Intake';
 import Itinerary from './Itinerary';
 import Upload from './Upload';
-import Explore from './Explore';
+import <ExploreContainer></ExploreContainer> from './Explore';
 import Footer from './Footer';
 
 export default function ItineraryContainer() {
@@ -29,7 +29,7 @@ export default function ItineraryContainer() {
         return <Upload />;
     }
     if (currentPage === 'Explore') {
-        return <Explore />;
+        return <ExploreContainer />;
     }
   };
 
