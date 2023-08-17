@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Explore from './donotuse - Explore'
 
 function Upload() {
   // Create state variables for the fields in the form

@@ -1,5 +1,5 @@
-import '../styles/navigation.css'
-import resume from '../assets/Resume.pdf'
+// import '../styles/navigation.css'
+// import resume from '../assets/Resume.pdf'
 
 export default function Navigation({ currentPage, handlePageChange}) {
   return (
