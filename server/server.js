@@ -4,7 +4,7 @@ const db = require('./config/connection');
 const routes = require('./routes');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3020;
 
 app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));
