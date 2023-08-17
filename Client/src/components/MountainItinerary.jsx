@@ -44,9 +44,9 @@ export default function MountainItinerary() {
                 <div>
                     <h4>WHERE TO EAT</h4>
                     <ul>
-                        <a href=""><li>restaurant 2</li></a>
-                        <a href=""><li>restaurant 2</li></a>
-                        <a href=""><li>restaurant 3</li></a>
+                        <a href="https://www.snakeriverbrewing.com/"><li>Snake River Brewing</li></a>
+                        <a href="https://mangymoose.com/"><li>Mangy Moose Restaraunt and Saloon</li></a>
+                        <a href="http://www.bluelionrestaurant.com/"><li>the blue Lion</li></a>
                     </ul>
                 </div>
                 <div>
