@@ -15,6 +15,7 @@ export default function Itinerary() {
                 <div>
                     <p>Where to Stay</p>
                     <img src="tbd" alt="tbd" />
+                    {}
                 </div>
                 <div>
                     <p>What to Do</p>

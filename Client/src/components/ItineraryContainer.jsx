@@ -5,7 +5,7 @@ import Login from './Login';
 import Intake from './Intake';
 import Itinerary from './Itinerary';
 import Upload from './Upload';
-import <ExploreContainer></ExploreContainer> from './Explore';
+import ExploreContainer from './ExploreContainer';
 import Footer from './Footer';
 
 export default function ItineraryContainer() {

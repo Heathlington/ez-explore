@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Explore from './Explore'
+import Explore from './donotuse - Explore'
 
 function Upload() {
   // Create state variables for the fields in the form
@@ -127,6 +127,7 @@ function Upload() {
         />
         
         <button className="btn btn-dark" type="submit">Submit</button>
+        {/*when click submit, create object that has info and send as fetch to db from backend route*/}
       </form>
     </div>
     </div>
