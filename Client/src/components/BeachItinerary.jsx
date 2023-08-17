@@ -16,30 +16,38 @@ export default function BeachItinerary() {
                     <h4>WHERE TO STAY</h4>
                     <h5>Budget</h5>
                     <ul>
-                        <li><img src="" alt="" /></li>
-                        <li>hotel name</li>
-                        <li>average price</li> 
+                        <li><img src="https://s7d1.scene7.com/is/image/marriotts7prod/fi-vpsdf-exterior-view-14431-55415:Classic-Hor?wid=1215&fit=constrain" alt="fairfield inn destin" /></li>
+                        <a href="https://www.marriott.com/en-us/hotels/vpsdf-fairfield-inn-and-suites-destin/overview/"><li>Fairfield Inn & Suites by Marriott Destin</li></a>
+                        <li>$</li> 
                     </ul>
                     <h5>Average</h5>
                     <ul>
-                        <li><img src="" alt="" /></li>
-                        <li>hotel name</li>
-                        <li>average price</li> 
+                        <li><img src="https://i.pinimg.com/736x/13/89/68/138968240fcc25ac5f2d43f0b0d20a4d--beach-resorts-golf.jpg" alt="sandestin beach resort" /></li>
+                        <a href="https://www.sandestin.com/?utm_source=TripAdvisor&utm_medium=listing&utm_campaign=TripAdvisor%20main%20listing"><li>Sandestin Golf and Beach Resort</li></a>
+                        <li>$$</li> 
                     </ul>
                     <h5>Bougie</h5>
                     <ul>
-                        <li><img src="" alt="" /></li>
-                        <li>hotel name</li>
-                        <li>average price</li> 
+                        <li><img src="https://www.hendersonparkinn.com/content/uploads/2022/04/HPI-Hero--1408x700.jpg" alt="henderson park inn" /></li>
+                        <a href="https://www.hendersonparkinn.com/?utm_source=TripAdvisor&utm_medium=Business%20Listing&utm_campaign=Hotel%20Website%20Link"><li>Henderson Park Inn</li></a>
+                        <li>$$$$</li>
                     </ul>
                 </div>
                 <div>
-                    <h4>What to Do</h4>
-                    <img src="tbd" alt="tbd" />
+                    <h4>WHAT TO DO</h4>
+                    <ul>
+                        <a href="https://www.floridastateparks.org/parks-and-trails/henderson-beach-state-park"><li>Take full advantage of the crystal blue waters and soft white beaches</li></a>
+                        <a href="https://dolphincruisesdestinfl.com/cruises/sunset-dolphin-cruise/"><li>Sip adult beverages and drink up the sunset on a dolphin harbor sail</li></a>
+                        <a href="https://www.emeraldgrande.com/harborwalk-village"><li>Unleash your inner child at the Harborwalk Village</li></a>
+                    </ul>
                 </div>
                 <div>
-                    <h4>Where to Eat</h4>
-                    <img src="tbd" alt="tbd" />
+                    <h4>WHERE TO EAT</h4>
+                    <ul>
+                        <a href="https://stinkysfishcamp.com/"><li>Stinky's Fish Camp</li></a>
+                        <a href="https://yugasushihouse.com/"><li>Yoga Sushi & Sake House</li></a>
+                        <a href="http://www.bijouxdestin.com/"><li>Bijoux</li></a>
+                    </ul>
                 </div>
                 <div>
                     <h4>Other Details</h4>
