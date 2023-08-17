@@ -43,6 +43,7 @@ export default function MountainItinerary() {
                 </div>
                 <div>
                     <h4>WHERE TO EAT</h4>
+                    <ul>
                         <a href=""><li>restaurant 2</li></a>
                         <a href=""><li>restaurant 2</li></a>
                         <a href=""><li>restaurant 3</li></a>
