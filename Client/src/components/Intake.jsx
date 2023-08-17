@@ -20,37 +20,55 @@ function Intake() {
 
         let resultComponent = null
 
+        // if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Budget') {
+        //   //resultComponent = <ComponentA />
+        //   console.log('Beach Budget Test')
+        // } else if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Average') {
+        //   console.log('Beach Average Test')
+        // } else if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Bougie') {
+        //   console.log('Beach Bougie Test')
+        // } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Budget') {
+        //   console.log('Mountains Budget Test')
+        // } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Average') {
+        //   console.log('Mountains Average Test')
+        // } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Bougie') {
+        //   console.log('Mountains Bougie Test')
+        // } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Budget') {
+        //   console.log('City Budget Test')
+        // } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Average') {
+        //   console.log('City Average Test')
+        // } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Bougie') {
+        //   console.log('City Bougie Test')
+        // } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Budget') {
+        //   console.log('Countryside Budget Test')
+        // } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Average') {
+        //   console.log('Countryside Average Test')
+        // } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Bougie') {
+        //   console.log('Countryside Bougie Test')
+        // } else {
+
+        // }
+
         if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Budget') {
           //resultComponent = <ComponentA />
           console.log('Beach Budget Test')
         } else if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Average') {
-          console.log('Beach Average Test')
-        } else if (inputs.destinationType === 'Beach' && inputs.activityType === 'Relax' && inputs.budget === 'Bougie') {
-          console.log('Beach Bougie Test')
+
         } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Budget') {
           console.log('Mountains Budget Test')
         } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Average') {
-          console.log('Mountains Average Test')
-        } else if (inputs.destinationType === 'Mountains' && inputs.activityType === 'Adventure' && inputs.budget === 'Bougie') {
-          console.log('Mountains Bougie Test')
+
         } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Budget') {
           console.log('City Budget Test')
-        } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Average') {
-          console.log('City Average Test')
-        } else if (inputs.destinationType === 'City' && inputs.activityType === 'Foodie' && inputs.budget === 'Bougie') {
-          console.log('City Bougie Test')
+
         } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Budget') {
           console.log('Countryside Budget Test')
-        } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Average') {
-          console.log('Countryside Average Test')
-        } else if (inputs.destinationType === 'Countryside' && inputs.activityType === 'History' && inputs.budget === 'Bougie') {
-          console.log('Countryside Bougie Test')
         } else {
 
         }
 
         setShowResult(true);
-        setResultComponent(selectedResultComponent);
+        setResultComponent(ResultComponent);
       };
     
       return (
