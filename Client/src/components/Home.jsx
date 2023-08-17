@@ -4,7 +4,7 @@ export default function Home() {
             <div>
                 <header className="header">
                 <a href="#contact">
-                    <img className="hero" src={home} alt="homepage hero image" />
+                    <img className="hero" src="" alt="homepage hero image" />
                     </a>
                 </header>
             </div>
