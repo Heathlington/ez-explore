@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const path = require('path')
 const apiRoutes = require('./api')
 
 router.use('/api', apiRoutes);
@@ -6,5 +7,9 @@ router.use('/api', apiRoutes);
 router.get('/trips', function(){
     console.log("working")
 });
+
+router.use((req, res) => {
+    res.sendFile(path.join(__dirname, '../../Client/dist/index.html'));
+  });
 
 module.exports = router;
