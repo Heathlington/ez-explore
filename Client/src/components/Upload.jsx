@@ -15,29 +15,29 @@ function Upload() {
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.firstName;
-    const inputValue = target.value;
+    const { name, value } = e.target;
+    // const inputType = target.firstName;
+    // const inputValue = target.value;
 
     // Based on the input type, we set the state of either email, username, and password
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'firstName') {
-      setFirstName(inputValue);
-    } else if (inputType === 'lastName') {
-      setLastName(inputValue);
-    } else if (inputType === 'destination') {
-        setDestination(inputValue);
-    } else if (inputType === 'destinationDetails') {
-        setDestinationDetails(inputValue);
-    } else if (inputType === 'length') {
-        setLength(inputValue);
-    } else if (inputType === 'stay') {
-        setStay(inputValue);
-    } else if (inputType === 'eat') {
-        setEat(inputValue);
+    if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'firstName') {
+      setFirstName(value);
+    } else if (name === 'lastName') {
+      setLastName(value);
+    } else if (name === 'destination') {
+        setDestination(value);
+    } else if (name === 'destinationDetails') {
+        setDestinationDetails(value);
+    } else if (name === 'length') {
+        setLength(value);
+    } else if (name === 'stay') {
+        setStay(value);
+    } else if (name === 'eat') {
+        setEat(value);
     } else {
-        setActivities(inputValue)
+        setActivities(value)
     }
   };
 
