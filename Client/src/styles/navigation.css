@@ -3,12 +3,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #01304a;
   }
   
   li {
     float: left;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
   }
   
   li a {
@@ -18,8 +19,18 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Change the link color to #111 (black) on hover */
+
   li a:hover {
-    background-color: #111;
+    background-color: #91c9e5;
+    color: #df935e
+  }
+
+  .icon {
+    max-height: 100px;
+    width: auto;
+    padding: none;
+  }
+
+  .nav-container {
+    background-color: #01304a;
   }
