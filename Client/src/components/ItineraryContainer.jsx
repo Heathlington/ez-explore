@@ -9,7 +9,7 @@ import ExploreContainer from './ExploreContainer';
 // import Footer from './Footer';
 
 export default function ItineraryContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('Login');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {

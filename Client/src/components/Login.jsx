@@ -1,47 +1,66 @@
 import { useState } from 'react';
+import { createUser, loginUser } from '../utils/API';
+import Auth from '../utils/auth';
 
 function Login() {
-    // Create state variables for the fields in the form
-    // We are also setting their initial values to an empty string
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+
+
+    const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+    
  
   
-    const handleInputChange = (e) => {
+    const handleInputChange = (event) => {
       // Getting the value and name of the input which triggered the change
-      const { target } = e;
-      const inputType = target.firstName;
-      const inputValue = target.value;
-  
-      // Based on the input type, we set the state of either email, username, and password
-      if (inputType === 'email') {
-        setEmail(inputValue);
-      } else {
-        setPassword(inputValue);
-      } 
-    };
-  
-    const handleFormSubmit = (e) => {
-      // Preventing the default behavior of the form submit (which is to refresh the page)
-      e.preventDefault();
-      setEmail('');
-      setPassword('');
-    };
-  
+      const { name, value } = event.target;
+      setUserFormData({ ...userFormData, [name]: value });
+    }
+
+    const handleFormSubmit = async (event) => {
+      event.preventDefault();
+
+    
+    try {
+      const response = await createUser(userFormData)
+
+      if (!response.ok) {
+        throw new Error('Something went wrong!')
+      }
+
+      const { token, user } = await response.json();
+      console.log(user);
+      Auth.login(token);
+    } catch (err) {
+      console.log(err)
+    }
+
+    setUserFormData({
+      username: '',
+      email: '',
+      password: '',
+    });
+    
+    }
     return (
       <div className="contact">
       <div className="container text-center">
           <h1 className="form-header">Login to EZexplore</h1>
         <form className="form" onSubmit={handleFormSubmit}>
           <input
-            value={email}
+            value={userFormData.username}
+            name="username"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="username"
+          />
+          <input
+            value={userFormData.email}
             name="email"
             onChange={handleInputChange}
             type="email"
             placeholder="email"
           />
           <input
-            value={password}
+            value={userFormData.password}
             name="password"
             onChange={handleInputChange}
             type="text"
@@ -49,7 +68,7 @@ function Login() {
           />
           
           <button className="btn btn-dark" type="submit">Submit</button>
-          <button className="btn btn-dark" type="submit">Create Account</button>
+          <button className="btn btn-dark" type="button">Create Account</button>
         </form>
       </div>
       </div>
