@@ -4,18 +4,12 @@ import icon from '../assets/icon.png'
 
 export default function Navigation({ currentPage, handlePageChange}) {
   return (
+    <div className="nav-container">
+      {/* <img src={icon} className="icon" alt="EZexplore icon" /> */}
     <ul className="nav nav-tabs">
-        <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          <img src={icon} alt="EZexplore icon" />
-        </a>
-      </li>
+      {/* <li className="nav-item">
+        <img src={icon} alt="EZexplore icon" />
+      </li> */}
       <li className="nav-item">
         <a
           href="#home"
@@ -58,5 +52,6 @@ export default function Navigation({ currentPage, handlePageChange}) {
         </a>
       </li>
     </ul>
+    </div>
   );
   }
