@@ -11,6 +11,13 @@ import SignUp from './SignUp'
 
 export default function ItineraryContainer() {
   const [currentPage, setCurrentPage] = useState('Login');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleSuccessfulLogin = () => {
+    setIsLoggedIn(true);
+    setCurrentPage('Home')
+  }
+ 
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -18,7 +25,7 @@ export default function ItineraryContainer() {
       return <Home />;
     }
     if (currentPage === 'Login') {
-      return <Login />;
+      return <Login handleSuccessfulLogin={handleSuccessfulLogin} />;
     }
     if (currentPage === 'Intake') {
       return <Intake />;
@@ -42,7 +49,7 @@ export default function ItineraryContainer() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} isLoggedIn={isLoggedIn} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main>{renderPage()}</main>
     </div>

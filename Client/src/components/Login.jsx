@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { loginUser } from '../utils/API';
 import AuthService from '../utils/auth';
 
-function Login() {
+function Login({ handleSuccessfulLogin, setCurrentPage }) {
 
 
     const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
-    
- 
+
   
     const handleInputChange = (event) => {
       // Getting the value and name of the input which triggered the change
@@ -16,7 +15,8 @@ function Login() {
     }
 
     const handleFormSubmit = async (event) => {
-      event.preventDefault();
+      //event.preventDefault();
+      console.log('Is this thing on??')
 
     
     try {
@@ -25,19 +25,21 @@ function Login() {
       if (!response.ok) {
         throw new Error('Something went wrong!')
       }
-
+      setC
       const { token, user } = await response.json();
+      
       console.log(user);
       AuthService.login(token);
+      handleSuccessfulLogin();
     } catch (err) {
       console.log(err)
     }
 
-    setUserFormData({
-      username: '',
-      email: '',
-      password: '',
-    });
+    // setUserFormData({
+    //   username: '',
+    //   email: '',
+    //   password: '',
+    // });
     
     }
 

@@ -1,26 +1,38 @@
 import '../styles/navigation.css'
 import icon from '../assets/icon.png'
+import { useState, useEffect } from 'react';
+import Auth from '../utils/auth';
+import { loginUser } from '../utils/API';
+
 
 
 export default function Navigation({ currentPage, handlePageChange}) {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+
+
+
+
   return (
-    <div className="nav-container">
-      {/* <img src={icon} className="icon" alt="EZexplore icon" /> */}
-    <ul className="nav nav-tabs">
-      {/* <li className="nav-item">
-        <img src={icon} alt="EZexplore icon" />
-      </li> */}
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
+   <div>
+      {/* {isLoggedIn && ( */}
+      <div className="nav-container">
+        {/* <img src={icon} className="icon" alt="EZexplore icon" /> */}
+      <ul className="nav nav-tabs">
+        {/* <li className="nav-item">
+          <img src={icon} alt="EZexplore icon" />
+        </li> */}
+        <li className="nav-item">
+          <a
+            href="#home"
+            onClick={() => handlePageChange('Home')}
+            // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+            // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          >
+            Home
+          </a>
+        </li>
       <li className="nav-item">
         <a
           href="#explore"
@@ -56,9 +68,13 @@ export default function Navigation({ currentPage, handlePageChange}) {
           href="#upload"
           onClick={() => handleLogout()}
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage='nav-link'}>Log Out</button>
+          >Log Out</button>
       </li>
+
+      
     </ul>
     </div>
-  );
-  }
+    {/* )} */}
+    </div> 
+  )
+      }
