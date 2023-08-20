@@ -31,6 +31,9 @@ module.exports = {
         }
         const token = signToken(user);
         res.json({ token, user });
+    },
+    async logOut(req, res) {
+        res.status(200).json({ message: 'Logout Successful' });
     }
 
 }

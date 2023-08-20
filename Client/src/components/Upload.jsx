@@ -13,9 +13,9 @@ function Upload() {
   const [eat, setEat] = useState('');
   const [activities, setActivities] = useState('');
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+   
     // const inputType = target.firstName;
     // const inputValue = target.value;
 
@@ -39,8 +39,14 @@ function Upload() {
     } else {
         setActivities(value)
     }
-  };
+  
 
+  const { name, value } = event.target;
+  setUserFormData({ ...UserFormData, [name]: value })
+
+
+  
+  }
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();

@@ -6,6 +6,7 @@ import Intake from './Intake';
 import Itinerary from './Itinerary';
 import Upload from './Upload';
 import ExploreContainer from './ExploreContainer';
+import SignUp from './SignUp'
 // import Footer from './Footer';
 
 export default function ItineraryContainer() {
@@ -30,6 +31,9 @@ export default function ItineraryContainer() {
     }
     if (currentPage === 'Explore') {
         return <ExploreContainer />;
+    }
+    if (currentPage === 'Sign Up') {
+      return <SignUp />
     }
   };
 

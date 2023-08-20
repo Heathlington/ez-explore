@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { loginUser } from '../utils/API';
+import { createUser } from '../utils/API';
 import AuthService from '../utils/auth';
 
-function Login() {
-
+function SignUp() {
 
     const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
     
@@ -20,7 +19,7 @@ function Login() {
 
     
     try {
-      const response = await loginUser(userFormData)
+      const response = await createUser(userFormData)
 
       if (!response.ok) {
         throw new Error('Something went wrong!')
@@ -40,11 +39,10 @@ function Login() {
     });
     
     }
-
     return (
       <div className="contact">
       <div className="container text-center">
-          <h1 className="form-header">Login to EZexplore</h1>
+          <h1 className="form-header">Sign up for EZexplore</h1>
         <form className="form" onSubmit={handleFormSubmit}>
           <input
             value={userFormData.username}
@@ -76,5 +74,5 @@ function Login() {
     );
   }
   
-  export default Login;
+  export default SignUp;
   

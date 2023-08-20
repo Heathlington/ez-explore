@@ -4,9 +4,9 @@ const apiRoutes = require('./api')
 
 router.use('/api', apiRoutes);
 
-router.get('/trips', function(){
-    console.log("working")
-});
+// router.get('/trips', function(){
+//     console.log("working")
+// });
 
 router.use((req, res) => {
     res.sendFile(path.join(__dirname, '../../Client/dist/index.html'));
