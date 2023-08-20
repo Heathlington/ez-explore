@@ -8,6 +8,7 @@ import quote4 from "../assets/quote4.png"
 export default function Home() {
     return (
             <div className="home">
+                <title>EZexplore</title>
                 <header className="header">
                     <a href="#contact">
                         <img className="hero" src={home_banner} alt="homepage hero image" />

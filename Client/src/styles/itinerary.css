@@ -1,0 +1,75 @@
+.itinerary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.destination-img {
+    width: 100%;
+}
+
+.itinerary-details {
+    padding: 0px 100px;
+}
+
+.card-text {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.sub-header {
+    background-color: #91c9e5;
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.hotel-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    align-items: center;
+  }
+
+  .hotels {
+    background-color: white!;
+    list-style-type: none;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .cost {
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+ 
+  .rest-img {
+    height: 200px;
+    width: 300px;
+    object-fit:contain;
+  }
+
+  .section {
+    padding: 50px;
+    margin-top: 5%;
+    background-color: #01304a;
+    color:white;
+  }
+
+  a {
+    color:#df935e;
+  }
