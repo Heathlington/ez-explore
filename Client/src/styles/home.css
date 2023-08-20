@@ -1,4 +1,30 @@
+/* .home {
+    background-color: #91c9e5;
+} */
 img {
     width: 100%;
     height: auto;
 }
+
+.reviews {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #df935e;
+    padding-bottom: 30px;
+}
+
+.reviews-header {
+    font-size: 24px;
+}
+
+div.scroll-container {
+    background-color: #df935e;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    max-width: 25%;
+  }

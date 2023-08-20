@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerimg {
+    max-width: 100px;
+    height: auto;
+}
+
+.disclaimer {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
+}

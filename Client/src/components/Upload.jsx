@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import '../styles/upload.css'
+import upload_banner from '../assets/upload_banner.png'
 
 function Upload() {
   // Create state variables for the fields in the form
@@ -63,73 +65,74 @@ function Upload() {
 
   return (
     <div className="contact">
-    <div className="container text-center">
-        <h1 className="form-header">Share Your Adventures!</h1>
-        <p>Share your own great adventures with your fellow explorers.</p>
+      <img src={upload_banner} alt="explore banner" className='upload-img' />
+    <div className="container text-center upload-styles">
       <form className="form" onSubmit={handleFormSubmit}>
+        <label>Enter the name of your destination</label><br />
+        <input
+          value={destination}
+          name="destination"
+          onChange={handleInputChange}
+          type="text"
+        /><br />
+        <label>Tell us more about your destination</label><br />
+         <input
+          value={destinationDetails}
+          name="destinationDetails"
+          onChange={handleInputChange}
+          type="textarea"
+        /><br />
+        <label>How long was your trip? (in days)</label><br />
+          <input
+          value={length}
+          name="length"
+          onChange={handleInputChange}
+          type="int"
+        /><br />
+        <label>Where did you stay?</label><br />
+          <input
+          value={stay}
+          name="stay"
+          onChange={handleInputChange}
+          type="text"
+        /><br />
+        <label>Where do you recommend eating at this destination?</label><br />
+          <input
+          value={eat}
+          name="eat"
+          onChange={handleInputChange}
+          type="text"
+        /><br />
+        <label>What were some highlights from your trip? (e.g. activities, must-see things, etc.)</label><br />
+          <input
+          value={activities}
+          name="activities"
+          onChange={handleInputChange}
+          type="text"
+        /><br /> <br /> <br />
+
+<label>Enter your contact information below</label><br />
       <input
           value={firstName}
           name="firstName"
           onChange={handleInputChange}
           type="text"
           placeholder="first name"
-        />
+        /> <br />
         <input
           value={lastName}
           name="lastName"
           onChange={handleInputChange}
           type="text"
           placeholder="last name"
-        />
+        /> <br />
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="email"
-        />
-        <input
-          value={destination}
-          name="destination"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="city, state, country"
-        />
-         <input
-          value={destinationDetails}
-          name="destinationDetails"
-          onChange={handleInputChange}
-          type="textarea"
-          placeholder="tell us about your destination"
-        />
-          <input
-          value={length}
-          name="length"
-          onChange={handleInputChange}
-          type="int"
-          placeholder="how long was your trip?"
-        />
-          <input
-          value={stay}
-          name="stay"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="where did you stay?"
-        />
-          <input
-          value={eat}
-          name="eat"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="where do you recommend eating?"
-        />
-          <input
-          value={activities}
-          name="activities"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="what were some highlights from your trip?"
-        />
+        /><br />
         
         <button className="btn btn-dark" type="submit">Submit</button>
         {/*when click submit, create object that has info and send as fetch to db from backend route*/}
