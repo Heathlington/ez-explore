@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { createUser, loginUser } from '../utils/API';
 import Auth from '../utils/auth';
+import '../styles/login.css'
+import login_banner from '../assets/login_banner.png'
 
 function Login() {
 
@@ -42,32 +44,32 @@ function Login() {
     }
     return (
       <div className="contact">
-      <div className="container text-center">
-          <h1 className="form-header">Login to EZexplore</h1>
+      <div className="container intake-styles">
+      <img src={login_banner} alt="banner image" className='intake-img' />
         <form className="form" onSubmit={handleFormSubmit}>
           <input
             value={userFormData.username}
             name="username"
             onChange={handleInputChange}
             type="text"
-            placeholder="username"
-          />
+            placeholder="Username"
+          /><br />
           <input
             value={userFormData.email}
             name="email"
             onChange={handleInputChange}
             type="email"
-            placeholder="email"
-          />
+            placeholder="Email"
+          /><br />
           <input
             value={userFormData.password}
             name="password"
             onChange={handleInputChange}
             type="text"
-            placeholder="password"
-          />
+            placeholder="Password"
+          /><br />
           
-          <button className="btn btn-dark" type="submit">Submit</button>
+          <button className="btn btn-dark" type="submit">Login</button>
           <button className="btn btn-dark" type="button">Create Account</button>
         </form>
       </div>

@@ -5,11 +5,7 @@ import icon from '../assets/icon.png'
 export default function Navigation({ currentPage, handlePageChange}) {
   return (
     <div className="nav-container">
-      {/* <img src={icon} className="icon" alt="EZexplore icon" /> */}
     <ul className="nav nav-tabs">
-      {/* <li className="nav-item">
-        <img src={icon} alt="EZexplore icon" />
-      </li> */}
       <li className="nav-item">
         <a
           href="#home"

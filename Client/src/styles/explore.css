@@ -1,0 +1,10 @@
+.explore-container {
+    display: inline-block;
+}
+
+.explore-img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
