@@ -9,7 +9,7 @@ export const createUser = (userData) => {
   };
   
   export const loginUser = (userData) => {
-    return fetch('/api/users/login', {
+    return fetch('/api/user/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,4 +1,4 @@
-const { Schema, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const SavedFileSchema = new Schema(
     {
@@ -48,4 +48,6 @@ const SavedFileSchema = new Schema(
     }
 );
 
-module.exports = SavedFileSchema;
+const SavedFile = model('SavedFile', SavedFileSchema)
+
+module.exports = SavedFile;

@@ -1,6 +1,7 @@
 // const router = require('express').Router();
-// const {postData} = require('../../controllers/itineraryController');
+// const {
+//     createItinerary,
+//     getItineraries
+// } = require('../../controllers/userController')
 
-// router.route('/').post(postData);
-
-// module.exports = router;
+// module.exports = 
