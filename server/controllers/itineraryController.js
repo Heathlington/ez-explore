@@ -1,14 +1,21 @@
-// // Example POST method implementation:
-// async function postData(url = "", data = {}) {
-//     // Default options are marked with *
-//     const response = await fetch(url, {
-//       method: "POST", // *GET, POST, PUT, DELETE, etc.
-     
-//       body: JSON.stringify(data), // body data type must match "Content-Type" header
-//     });
-//     return response.json(); // parses JSON response into native JavaScript objects
-//   }
-//   //request body goes here example- { answer: 42}
-//   postData("https://example.com/answer", { answer: 42 }).then((data) => {
-//     console.log(data); // JSON data parsed by `data.json()` call
-//   });
+// const { ObjectId } = require('mongoose').Types;
+// const { SavedFile } = require('../models');
+// const { signToken } = require('../utils/auth');
+
+// module.exports = {
+
+//     async createItinerary({ body }, res) {
+//         const user = await SavedFile.create(body);
+
+       
+//     },
+//     async getItineraries(params, res) {
+//         try {
+//             const allItineraries = await SavedFile.find();
+//             res.json(allItineraries);
+//         } catch (error) {
+//             console.error('Error fetching itineraries:', error);
+//             res.status(500).json({ message: 'An error occurred while fetching itineraries' });
+//         }
+//     }
+// };
