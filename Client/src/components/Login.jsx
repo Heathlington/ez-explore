@@ -5,7 +5,7 @@ import '../styles/login.css'
 import login_banner from '../assets/login_banner.png'
 import Home from './Home';
 
-function Login() {
+function Login({handlePageChange}) {
 
 
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
@@ -19,8 +19,9 @@ function Login() {
   }
 
   const handleFormSubmit = async (event) => {
+    
     event.preventDefault();
-
+    
 
     try {
       const response = await loginUser(userFormData)
@@ -32,18 +33,18 @@ function Login() {
       const { token, user } = await response.json();
       console.log(user);
       Auth.login(token);
- 
-      //window.location.replace(window.location.href + "#home")
+      handlePageChange('Home')
+
 
     } catch (err) {
       console.log(err)
     }
 
-    setUserFormData({
-      username: '',
-      email: '',
-      password: '',
-    });
+    // setUserFormData({
+    //   username: '',
+    //   email: '',
+    //   password: '',
+    // });
   }
     // if (loggedIn) {
     //   return (
@@ -84,5 +85,5 @@ function Login() {
         </div>
       )
     }
-// }
+ 
 export default Login;
