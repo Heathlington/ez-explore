@@ -11,7 +11,7 @@ export default function CityItinerary() {
                     </header>
                 </div>
                 <div className="itinerary-details">
-                    <p className="card-text">ONew York is composed of five boroughs: Brooklyn, the Bronx, Manhattan, Queens and Staten Island. It is home to 8.4 million people who speak more than 200 languages, hail from every corner of the globe, and, together, are the heart and soul of the most dynamic city in the world. Home to around 10 million people, NYC has tons of things to see and do. You can barely scratch the surface on a typical four- or five-day visit. In short, New York is impossible to “see” in one visit. This city is home to thousands of restaurants, hundreds of museums, attractions, plays, and quirky things to do.</p>
+                    <p className="card-text">New York is composed of five boroughs: Brooklyn, the Bronx, Manhattan, Queens and Staten Island. It is home to 8.4 million people who speak more than 200 languages, hail from every corner of the globe, and, together, are the heart and soul of the most dynamic city in the world. Home to around 10 million people, NYC has tons of things to see and do. You can barely scratch the surface on a typical four- or five-day visit. In short, New York is impossible to “see” in one visit. This city is home to thousands of restaurants, hundreds of museums, attractions, plays, and quirky things to do.</p>
                 </div>
                 <h4 className="sub-header">WHERE TO STAY</h4>
                     <div className="row">
