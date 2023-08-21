@@ -17,7 +17,7 @@ export default function ItineraryContainer() {
       return <Home />;
     }
     if (currentPage === 'Login') {
-      return <Login />;
+      return <Login handlePageChange={handlePageChange}/>;
     }
     if (currentPage === 'Intake') {
       return <Intake />;
@@ -39,7 +39,6 @@ export default function ItineraryContainer() {
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Login currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main>{renderPage()}</main>
     </div>
